@@ -7,7 +7,7 @@ header .nav-main {
   padding: 0.9rem 1.5rem;
 }
 header .nav-main a:hover {
-  background: rgb(233, 233, 233);
+  background: #6CC4CC;
   text-decoration: none;
 }
 header .nav-main .nav-list {
@@ -24,12 +24,11 @@ header .nav-main .nav-list li {
   margin: 0 1rem;
 }
 header .nav-main .nav-list a:hover {
-  background: rgb(233, 233, 233);
-  background: rgb(237, 237, 237);
+  background: #6CC4CC;
   text-decoration: none;
 }
 header .nav-main .nav-list .link {
-  color: #212121;
+  color: #fff;
   padding: 0.8rem 0.75rem;
   margin: 0 0.4rem;
   font-size: 16px;
@@ -42,7 +41,7 @@ header .nav-main .nav-list .link:first-child {
 }
 header .nav-main .home-button {
   text-decoration: none;
-  color: #212121;
+  color: #fff;
   padding-right: 0.5rem;
   font-size: 24px;
   font-size: clamp(1.3rem, 4vw, 1.5rem);
@@ -56,7 +55,7 @@ header .intro {
   padding: 0 1.5rem;
 }
 header .intro div p {
-  color: #333;
+  color: #fff;
 }
 header .intro div:first-child {
   margin-right: 2rem;
@@ -65,8 +64,13 @@ header .intro .home-button {
   display: block;
   font-size: 28px;
   font-size: clamp(26px, 4vw, 28px);
-  color: #222;
+  color: #fff;
   margin-bottom: 14px;
+}
+header .intro .home-logo {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
 }
 header .intro .hire-me {
   border: 1px solid #111;
@@ -122,10 +126,10 @@ header .intro .hire-me:hover {
 }
 .gallery-item .image-block .block-details p {
   margin-bottom: 0;
-  color: #333;
+  color: #fff;
 }
 .gallery-item a {
-  color: #212121;
+  color: #fff;
 }
 .gallery-item a .gallery-photo {
   max-width: 100%;
@@ -211,7 +215,7 @@ header .intro .hire-me:hover {
   text-decoration: none;
   background: inherit;
   font-size: 1em;
-  color: #333;
+  color: #fff;
   background: rgb(242, 242, 242);
 }
 .featured-img .prev-next a:hover {
@@ -266,6 +270,7 @@ header .intro .hire-me:hover {
   border-radius: 0.15rem;
   font-size: 16px;
   -webkit-appearance: none;
+  color: #fff;
 }
 .contact-form input {
   height: 2.75rem;
@@ -276,11 +281,10 @@ header .intro .hire-me:hover {
 }
 .contact-form button {
   margin-bottom: 36px;
-  background: rgb(27, 110, 226);
-  background: rgb(26, 107, 221);
+  background: #6CC4CC;
   padding: 11px 1.35rem;
   border-radius: 3px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Arial, sans-serif;
   border: none;
   color: #fff;
   margin-top: 1.35rem;
@@ -302,10 +306,10 @@ footer {
   bottom: 0;
 }
 footer a {
-  color: #212121;
+  color: #fff;
 }
 footer a:hover {
-  color: #1836AF;
+  color: #6CC4CC;
 }
 
 .social-links {
@@ -330,7 +334,7 @@ footer a:hover {
   width: 100%;
 }
 .footer-content p {
-  color: #222;
+  color: #fff;
 }
 
 .footer-info {
@@ -409,8 +413,9 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background: #fcfcfc;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #004C65;
+  color: #fff;
+  font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -426,17 +431,17 @@ p {
   font-size: 1rem;
   font-size: clamp(1rem, 3vw, 1.0625rem);
   line-height: 1.5;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 a {
-  color: #2540AD;
+  color: #6CC4CC;
   text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Arial, sans-serif;
 }
 a:hover, a:focus {
   text-decoration: underline;
-  color: #1836AF;
+  color: #6CC4CC;
 }
 
 main p {
@@ -466,16 +471,16 @@ main .gallery-header {
   transition: transform 0.3s ease-in-out;
   padding: 0.5rem;
   background: rgb(255, 255, 255);
-  color: #222;
+  color: #fff;
   z-index: 999;
 }
 .skip-link:focus {
   transform: translateY(0);
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #212121;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+  color: #fff;
 }
 
 h1, .h1 {
@@ -523,7 +528,7 @@ h2, .h2 {
   max-width: 1100px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  color: #212141;
+  color: #fff;
 }
 .page-banner p {
   font-size: 1rem;

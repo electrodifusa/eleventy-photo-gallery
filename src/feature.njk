@@ -3,7 +3,7 @@ pagination:
     data: gallery
     size: 1
     alias: image
-permalink: "/gallery/{{ image.title | slug }}/"
+permalink: "/gallery/{{ image.slug }}/"
 url: https://eleventy-gallery.netlify.app
 ---
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ url: https://eleventy-gallery.netlify.app
         {% metagen 
             title=image.title,
             desc=image.title + " " + site.pageMetadata.featured.content,
-            url=url + "/gallery/" + image.title | slug + "/",
+            url=url + "/gallery/" + image.slug + "/",
             img=url + image.imgDir + image.src,
             img_alt=image.alt,
             twitter_card_type='summary_large_image',
@@ -48,7 +48,10 @@ url: https://eleventy-gallery.netlify.app
                     %}
                     <div class="image-description">
                         <h1 class="h2">{{ image.title }}</h1>
-                        <p>{{ image.credit }} on <a class="credit" href="{{ image.linkToAuthor }}">Pexels</a></p>
+                        <p>{{ image.alt }}</p>
+                        {% if image.credit and image.linkToAuthor %}
+                            <p>{{ image.credit }} on <a class="credit" href="{{ image.linkToAuthor }}">Pexels</a></p>
+                        {% endif %}
                     </div>
                     <div class="prev-next">
                         {% if pagination.href.previous %}

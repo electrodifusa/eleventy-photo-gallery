@@ -1,29 +1,25 @@
 {   
     "author": {
-        "firstName": "John",
-        "lastName": "Smith",
-        "email": "foobar@gmail.com",
-        "twitterHandle": "tannerdolby",
-        "about": "Freelance photographer interested in film and cinematography"
+        "firstName": "Yesica",
+        "lastName": "Pérez",
+        "email": "yp@electrodifusa.com",
+        "about": "Cuidando las atmósferas a través de la luz."
     },
     "socials": {
-        "twitter": "https://twitter.com/tannerdolby",
-        "linkedin": "https://linkedin.com/in/tanner-dolby",
-        "dribbble": "https://dribbble.com/tannerdolby",
-        "github": "https://github.com/tannerdolby"
+        "instagram": "https://www.instagram.com/electrodifusa/"
     },
     "pageMetadata": {
         "home": {
-            "content": "A photo gallery template with stock photos provided from Pexels. Add or remove images from the grid and customize your own image gallery!"
+            "content": " "
         },
         "gallery": {
-            "content": "A collection of images from John Smith's gallery."
+            "content": "Página de proyectos de Electrodifusa."
         },
         "featured": {
-            "content": "from John Smith's gallery."
+            "content": "Página de proyectos de Electrodifusa."
         },
         "about": {
-            "content": "A page about John Smith, and photography. This template is currently the default version so add your own about me page info here."
+            "content": "Página sobre Electrodifusa y su  sus proyectos de iluminación."
         }
 
     }

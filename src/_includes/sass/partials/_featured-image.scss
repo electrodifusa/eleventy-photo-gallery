@@ -1,3 +1,5 @@
+@use "../vars/" as *;
+
 .featured-img {
     display: flex;
     flex-direction: column;
@@ -36,7 +38,7 @@
             text-decoration: none;
             background: inherit;
             font-size: 1em;
-            color: #333;
+            color: $text-color;
             background: rgb(242, 242, 242);
 
             &:hover {

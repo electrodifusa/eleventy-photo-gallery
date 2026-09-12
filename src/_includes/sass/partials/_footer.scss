@@ -9,7 +9,7 @@ footer {
     bottom: 0;
 
     a {
-        color: #212121;
+        color: $text-color;
 
         &:hover {
             color: $link-blue-accessible-hover;
@@ -41,7 +41,7 @@ footer {
     }
 
     p {
-        color: #222;
+        color: $text-color;
     }
 }
 
