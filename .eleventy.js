@@ -23,7 +23,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("./src/js");
   eleventyConfig.addPassthroughCopy("./src/favicon_data");
   eleventyConfig.addPassthroughCopy("./src/assets");
-
+  eleventyConfig.addPassthroughCopy("./src/CNAME");
   // Create css-clean CSS Minifier filter
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
