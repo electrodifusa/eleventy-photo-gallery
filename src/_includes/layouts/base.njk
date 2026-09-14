@@ -24,6 +24,9 @@
         <style>
             {{ css | cssmin | safe }}
         </style>
+        <script>
+            {% include "js/email.js" %}
+        </script>
     </head>
     <body>
         <a href="#main" class="skip-link">Skip to main content</a>

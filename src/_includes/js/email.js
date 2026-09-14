@@ -1,9 +1,13 @@
-// update this variable with your email :)
-const email = "foobar@gmail.com";
-const submit = document.querySelector(".reach-me");
+const email = "yp@electrodifusa.com";
 
-function sendMail() {
+function sendMail(event) {
+    event.preventDefault();
+
+    const name = document.querySelector("#name").value.trim();
     const subject = document.querySelector(".email-subject").value;
     const message = document.querySelector(".email-msg").value;
-    window.location.href = `mailto:${email}?subject=${subject}&body=${message}`;
+    const body = `${message}\n\nNombre: ${name}`;
+
+    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    return false;
 }

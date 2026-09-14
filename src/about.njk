@@ -23,7 +23,7 @@ layout: main.njk
   <h2 id="contact-me">Escríbeme</h2>
   <p>Si tienes una idea a la que quieres llevar luz y emociones!</p>
   
-  <form class="contact-form" onsubmit="sendMail()">
+  <form class="contact-form" onsubmit="return sendMail(event)">
       <label for="name">Nombre</label>
       <input type="text" name="name" id="name" required>
       <label class="form-label" for="subject">Asunto</label>
