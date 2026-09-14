@@ -49,7 +49,7 @@
         border-radius: .15rem;
         font-size: 16px;
         -webkit-appearance: none;
-        color: $text-color;
+        color: #000;
     }
 
     input {
@@ -63,20 +63,19 @@
 
     button {
         margin-bottom: 36px;
-        background: #6CC4CC;
+        background: #1e262b;
         padding: 11px 1.35rem;
         border-radius: 3px;
         font-family: $body-font;
-        border: none;
+        border: 1px solid #111;
         color: #fff;
         margin-top: 1.35rem;
         max-width: fit-content;
         max-width: -moz-fit-content;
     
             &:hover {
-                border: none;
                 cursor: pointer;
-                background: rgb(23, 100, 209);
+                background: #1a1f24;
             }
         
     }

@@ -270,7 +270,7 @@ header .intro .hire-me:hover {
   border-radius: 0.15rem;
   font-size: 16px;
   -webkit-appearance: none;
-  color: #fff;
+  color: #000;
 }
 .contact-form input {
   height: 2.75rem;
@@ -281,20 +281,19 @@ header .intro .hire-me:hover {
 }
 .contact-form button {
   margin-bottom: 36px;
-  background: #6CC4CC;
+  background: #1e262b;
   padding: 11px 1.35rem;
   border-radius: 3px;
   font-family: Arial, sans-serif;
-  border: none;
+  border: 1px solid #111;
   color: #fff;
   margin-top: 1.35rem;
   max-width: fit-content;
   max-width: -moz-fit-content;
 }
 .contact-form button:hover {
-  border: none;
   cursor: pointer;
-  background: rgb(23, 100, 209);
+  background: #1a1f24;
 }
 
 footer {
