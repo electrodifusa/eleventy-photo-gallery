@@ -6,30 +6,60 @@ alt: logo Electrodifusa
 eleventyNavigation:
   key: Acerca de mí
   order: 2
-heading: Acerca de mí 
+heading: Acerca de Electrodifusa
 permalink: "/about/"
 layout: main.njk
 ---
 
 <div class="about-me-content">
-  <h1>{{ heading }}</h1>
-  <p>Hola, soy {{ site.author.firstName }} {{ site.author.lastName}}. Soy Ingeniera Eléctrica apasionada por la iluminación y el control (: </p>
+  <h1>Acerca de ElectroDifusa</h1>
+
+  <h2>Una ingeniera eléctrica de control que siempre ha sido fascinada por la luz</h2>
+  <p>Soy ingeniera eléctrica. Pasé años trabajando en control y automatización de procesos industriales, coordinando proyectos, en entornos que requerían mucha tolerancia a la frustración y un rigor de base para cuidar a las personas, a los equipos y al proceso. ElectroDifusa nace de tomar ese mismo rigor y llevarlo hacia otro lugar: el diseño y la construcción de piezas de luz que cambian cómo se percibe un espacio, porque lo que más anhelo a largo plazo es controlar la luz con los dispositivos más actuales de la industria, y aunque esa es mi ambición, mi fascinación por la luz y mis valores me llevan a recorrer esta transición desde lo que más me aterrice, desde el principio del camino.</p>
+
+  <p>No busco hacer un giro a algo meramente decorativo. Quiero controlar la luz, para crear atmósferas, usar la misma disciplina desde un nuevo ángulo que sume.</p>
+
+  <h2>Cómo pienso la luz</h2>
+  <p>Antes de proponer una pieza, escucho el espacio y a quien lo habita. La luz puede dirigir la mirada, cambiar cómo se leen los materiales, generar cercanía o distancia, generar un espacio agradable que se quiera habitar o contemplar. Por eso cada proyecto empieza con una pregunta simple: qué necesita este espacio y qué atmósfera esperamos de él.</p>
+
+  <p>Trabajo con el mismo cuidado sin importar si el proyecto es una intervención hecha a la medida de un lugar específico, irrepetible, o una pieza que decido sostener como línea para una comunidad. Son caminos distintos, pero el criterio detrás es el mismo.</p>
+
+  <h2>Lo técnico como punto de partida</h2>
+  <p>Mi trayectoria profesional me permite sostener la parte técnica y de coordinación y ejecución de proyectos: electricidad, control, seguridad, ejecución. Esa base no es un límite, es justo lo que me permite explorar con confianza — probar formas, tecnologías y soluciones nuevas sabiendo que van a funcionar tanto en lo que hacen como en cómo se sienten.</p>
+
+  <h2>El formato es lo de menos</h2>
+  <p>Una pieza de ElectroDifusa puede ser un letrero, una instalación arquitectónica, la iluminación de un evento o algo que todavía no tiene nombre. No me defino por el tipo de objeto que construyo, sino por el efecto que persigo: generar una emoción concreta en un espacio y en las personas que lo habitan. Tampoco busco un impacto que abrume. Busco el momento en que alguien entra, y sin saber por qué, la luz ya cambió algo y lo percibe.</p>
+
+  <h2>¿Quién está detrás?</h2>
+  <p>Soy Yesica. Me interesa entender cómo interactuamos con los espacios que habitamos y cómo decisiones pequeñas — el color o qué tan cálida es una luz — cambian por completo esa experiencia. ElectroDifusa es mi manera de seguir explorando esa pregunta, con oficio técnico real y con ganas de construir cosas que antes no existían.</p>
   
 
   <ul class="about-socials">
     <li><a href="{{ site.socials.instagram }}">@electrodifusa</a></li>
   </ul>
 
-  <h2 id="contact-me">Escríbeme</h2>
-  <p>Si tienes una idea a la que quieres llevar luz y emociones!</p>
+  <h2 id="contact-me">Hablemos de tu espacio o pieza de luz</h2>
+  <p>¿Tienes una idea, un espacio que necesita luz o simplemente algo que quieres explorar?</p>
+
+  <p>Cuéntame un poco sobre el proyecto. No necesitas tenerlo todo resuelto; podemos empezar desde ahí.</p>
   
     <form class="contact-form" method="POST" action="https://formspree.io/f/xqpkvwyz">
       <label for="name">Nombre</label>
-      <input type="text" name="name" id="name" required>
-      <label class="form-label" for="subject">Asunto</label>
-      <input class="email-subject" type="text" name="subject" id="subject" required>
-      <label class="form-label" for="message">Mensaje</label>
-      <textarea class="email-msg" rows="5" cols="30" name="message" id="message" required></textarea>
-      <button type="submit" class="reach-me button submit-contact">Enviar</button>
+      <input type="text" name="name" id="name" placeholder="¿Cómo te llamas?" required>
+      <label class="form-label" for="email">Correo</label>
+      <input class="email-subject" type="email" name="email" id="email" placeholder="¿Dónde puedo escribirte?" required>
+      <label class="form-label" for="interest">¿Qué estás buscando?</label>
+      <select name="interest" id="interest" required>
+        <option value="" selected disabled>Elige una opción</option>
+        <option value="Una pieza de iluminación">Una pieza de iluminación</option>
+        <option value="Una instalación">Una instalación</option>
+        <option value="Iluminación para un espacio">Iluminación para un espacio</option>
+        <option value="Una intervención artística">Una intervención artística</option>
+        <option value="Tengo una idea, pero aún no sé cómo aterrizarla">Tengo una idea, pero aún no sé cómo aterrizarla</option>
+        <option value="Otro">Otro</option>
+      </select>
+      <label class="form-label" for="message">Cuéntame sobre tu proyecto</label>
+      <textarea class="email-msg" rows="5" cols="30" name="message" id="message" placeholder="¿Qué espacio, idea o problema quieres explorar?" required></textarea>
+      <button type="submit" class="reach-me button submit-contact">Escríbeme</button>
   </form>
 </div>
