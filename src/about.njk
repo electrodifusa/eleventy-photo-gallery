@@ -47,7 +47,8 @@ layout: main.njk
       <label for="name">Nombre</label>
       <input type="text" name="name" id="name" placeholder="¿Cómo te llamas?" required>
       <label class="form-label" for="email">Correo</label>
-      <input class="email-subject" type="email" name="email" id="email" placeholder="¿Dónde puedo escribirte?" required>
+      <input class="email-subject" type="email" name="_replyto" id="email" placeholder="¿Dónde puedo escribirte?" required>
+      <input type="hidden" name="_subject" value="Nueva consulta desde ElectroDifusa">
       <label class="form-label" for="interest">¿Qué estás buscando?</label>
       <select name="interest" id="interest" required>
         <option value="" selected disabled>Elige una opción</option>
